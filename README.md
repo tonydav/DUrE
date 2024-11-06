@@ -3,6 +3,12 @@ DUrE - Davo's Ultimate reEncoder
 
  Single pass NVENC encoder. Will reecode video based on tiers and can optionally downscale 4k to 1080p. If target rate percentage is lower than tier will scale to that. Reencodes HEVC files but target percentage is always 1. Will removes audio and subtitles that are not in the configured language or marked as commentary. v6 now will give priority options if there are multiple audio tracks. E.g. truehd>dts>ac3. v7 now allows optional reencoding of audio with bitrate per channel and desired codec and number of channels. Default is still to copy the audio though.
 
+To install you simply need to copy to your local plugins directory. 
+In my case: /appdata/tdarr/server/Tdarr/Plugins/local
+
+IMPORTANT NOTE:
+If you are intending to reencode HVEC to HVEC (so to reduce high bitrate to lower bitrate saving space) you must have a rename in your flow.  In my case I add Davo265 at the end of the file in the flow and then the flow is set to ignore any file with "Davo" in it.  If you don't do this you will continually loop. Message me if you need assistance or a copy of my flow. I will try and post a screenshot of it.
+
 Basically I have a number of flows setup for different scenarios. E.g.
 
 Blockbuster - keep really high video (say 5000-10000kbps at 21 quality) and copy the audio as I want to keep it in TrueHD etc.
