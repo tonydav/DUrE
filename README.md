@@ -7,8 +7,7 @@ To install you simply need to copy to your local plugins directory.
 In my case: /appdata/tdarr/server/Tdarr/Plugins/local
 
 IMPORTANT NOTE:
-If you are intending to reencode HVEC to HVEC (so to reduce high bitrate to lower bitrate saving space) you must have a rename in your flow.  In my case I add Davo265 at the end of the file in the flow and then the flow is set to ignore any file with "Davo" in it.  If you don't do this you will continually loop. Message me if you need assistance or a copy of my flow. I will try and post a screenshot of it.
-
+If you are intending to reencode HVEC to HVEC (so to reduce high bitrate to lower bitrate saving space) you must have a rename in your flow.  In my case I add Davo265 at the end of the file in the flow and then the flow is set to ignore any file with "Davo" in it.  If you don't do this you will continually loop. Message me if you need assistance or a copy of my flow. I have included a sample flow that I use for action movies.
 Basically I have a number of flows setup for different scenarios. E.g.
 
 Blockbuster - keep really high video (say 5000-10000kbps at 21 quality) and copy the audio as I want to keep it in TrueHD etc.
